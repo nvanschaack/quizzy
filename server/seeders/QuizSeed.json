@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What does HTML stand for?",
+        "options": ["1. hyperlink text markup language", "2. hydrolink text markup language", "3. hyper text markup language", "4. hippo tiger mancoon lion"],
+        "correctAnswer": "3. hyper text markup language"
+    },
+    {
+        "question": "What does CSS stand for?",
+        "options": ["1. cascading script sheets", "2. castle story shoes", "3. cascading stylesheets", "4. constuctor syntax styles"],
+        "correctAnswer": "3. cascading stylesheets"
+    },
+    {
+        "question": "True or False: React is a framework.",
+        "options": ["True", "False"],
+        "correctAnswer": "False"
+    },
+    {
+        "question": "As column and row are in SQL, ___ and ___ are in MongoBD.",
+        "options": ["1. collection, document", "2. column, row", "3. document, collection", "4. table, field"],
+        "correctAnswer": "1. collection, document"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+      "thoughtText": "Wow! What a great quiz!",
+      "thoughtAuthor": "Brian Kernighan"
+    },
+    {
+      "thoughtText": "10/10 would recommened this quiz to a friend.",
+      "thoughtAuthor": "Max Kanat-Alexander"
+    },
+    {
+      "thoughtText": "This quiz was very helpful for my upcoming test!",
+      "thoughtAuthor": "Why The Lucky Stiff"
+    },
+    {
+      "thoughtText": "I'm not a great programmer; but I will be with this quiz!",
+      "thoughtAuthor": "Kent Beck"
+    },
+    {
+      "thoughtText": "Anymore quizes coming soon?!",
+      "thoughtAuthor": "Edward V. Berard"
+    },
+    {
+      "thoughtText": "This really hurt my brain!",
+      "thoughtAuthor": "Alan Kay"
+    },
+    {
+      "thoughtText": "Amazing! I learned so much!",
+      "thoughtAuthor": "C.A.R. Hoare"
+    },
+    {
+      "thoughtText": "Question 3 really left me stumped!",
+      "thoughtAuthor": "David Thomas"
+    },
+    {
+      "thoughtText": "If you optimize everything, you will always be unhappy.",
+      "thoughtAuthor": "Donald Knuth"
+    },
+    {
+      "thoughtText": "Taking this quiz everyday lead me to be the best programmer ever!",
+      "thoughtAuthor": "Lernantino"
+    }
+  ]
