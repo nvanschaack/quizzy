@@ -1,22 +1,155 @@
 [
     {
-        "question": "What does HTML stand for?",
-        "options": ["1. hyperlink text markup language", "2. hydrolink text markup language", "3. hyper text markup language", "4. hippo tiger mancoon lion"],
-        "correctAnswer": "3. hyper text markup language"
+        "questions": [
+            {
+                "question": "Which of the following is the basic unit of heredity?",
+                "options": [
+                    "1. Organ",
+                    "2. Tissue",
+                    "3. Gene",
+                    "4. Cell"
+                ],
+                "correctAnswer": "3. Gene"
+            },
+            {
+                "question": "What is the process by which plants capture energy from sunlight?",
+                "options": [
+                    "1. Cellular respiration",
+                    "2. Photosynthesis",
+                    "3. Mitosis",
+                    "4. Meiosis"
+                ],
+                "correctAnswer": "2. Photosynthesis"
+            },
+            {
+                "question": "What are the four main types of biological molecules?",
+                "options": [
+                    "1. Carbohydrates, proteins, lipids, and minerals",
+                    "2. Carbohydrates, proteins, fats, and vitamins",
+                    "3. Sugars, enzymes, fats, and water",
+                    "4. Muscles, bones, skin, and nerves"
+                ],
+                "correctAnswer": "1. Carbohydrates, proteins, lipids, and minerals"
+            },
+            {
+                "question": "What is the process by which cells break down glucose for energy?",
+                "options": [
+                    "1. Photosynthesis",
+                    "2. Cellular respiration",
+                    "3. Mitosis",
+                    "4. Meiosis"
+                ],
+                "correctAnswer": "2. Cellular respiration"
+            },
+            {
+                "question": "What is the scientific name for humans?",
+                "options": [
+                    "1. Homo sapiens",
+                    "2. Felis catus",
+                    "3. Canis lupus familiaris",
+                    "4. Ursus arctos"
+                ],
+                "correctAnswer": "1. Homo sapiens"
+            }
+        ],
+        "category": "Biology"
     },
     {
-        "question": "What does CSS stand for?",
-        "options": ["1. cascading script sheets", "2. castle story shoes", "3. cascading stylesheets", "4. constuctor syntax styles"],
-        "correctAnswer": "3. cascading stylesheets"
+        "questions": [
+            {
+                "question": "What does HTML stand for?",
+                "options": [
+                    "1. hyperlink text markup language",
+                    "2. hydrolink text markup language",
+                    "3. hyper text markup language",
+                    "4. hippo tiger mancoon lion"
+                ],
+                "correctAnswer": "3. hyper text markup language"
+            },
+            {
+                "question": "What does CSS stand for?",
+                "options": [
+                    "1. cascading script sheets",
+                    "2. castle story shoes",
+                    "3. cascading stylesheets",
+                    "4. constuctor syntax styles"
+                ],
+                "correctAnswer": "3. cascading stylesheets"
+            },
+            {
+                "question": "True or False: React is a framework.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correctAnswer": "False"
+            },
+            {
+                "question": "As column and row are in SQL, ___ and ___ are in MongoBD.",
+                "options": [
+                    "1. collection, document",
+                    "2. column, row",
+                    "3. document, collection",
+                    "4. table, field"
+                ],
+                "correctAnswer": "1. collection, document"
+            }
+        ],
+        "category": "Tech"
     },
     {
-        "question": "True or False: React is a framework.",
-        "options": ["True", "False"],
-        "correctAnswer": "False"
-    },
-    {
-        "question": "As column and row are in SQL, ___ and ___ are in MongoBD.",
-        "options": ["1. collection, document", "2. column, row", "3. document, collection", "4. table, field"],
-        "correctAnswer": "1. collection, document"
+        "questions": [
+            {
+                "question": "What is the smallest unit of matter that can participate in a chemical reaction?",
+                "options": [
+                    "1. Molecule",
+                    "2. Atom",
+                    "3. Compound",
+                    "4. Mixture"
+                ],
+                "correctAnswer": "2. Atom"
+            },
+            {
+                "question": "What is the name for the attraction between atoms that share electrons?",
+                "options": [
+                    "1. Ionic bond",
+                    "2. Covalent bond",
+                    "3. Metallic bond",
+                    "4. Hydrogen bond"
+                ],
+                "correctAnswer": "2. Covalent bond"
+            },
+            {
+                "question": "What is the pH scale used to measure?",
+                "options": [
+                    "1. Temperature",
+                    "2. Concentration of salt",
+                    "3. Acidity or basicity",
+                    "4. Concentration of sugar"
+                ],
+                "correctAnswer": "3. Acidity or basicity"
+            },
+            {
+                "question": "What is the process by which a substance undergoes a chemical reaction to release energy?",
+                "options": [
+                    "1. Endothermic reaction",
+                    "2. Exothermic reaction",
+                    "3. Neutralization",
+                    "4. Precipitation"
+                ],
+                "correctAnswer": "2. Exothermic reaction"
+            },
+            {
+                "question": "What are the elements in the periodic table organized by?",
+                "options": [
+                    "1. Increasing atomic mass",
+                    "2. Decreasing atomic number",
+                    "3. Chemical properties",
+                    "4. Color"
+                ],
+                "correctAnswer": "1. Increasing atomic mass"
+            }
+        ],
+        "category": "Chemistry"
     }
 ]

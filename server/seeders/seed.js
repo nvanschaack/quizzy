@@ -1,8 +1,8 @@
 const db = require('../config/connection');
-const { User, Quiz, Thought } = require('../models');
+const { User, Quiz, Comment } = require('../models');
 const UserSeed = require('./UserSeed.json');
 const QuizSeed = require('./QuizSeed.json');
-const ThoughtSeed = require('./ThoughtSeed.json');
+// const ThoughtSeed = require('./ThoughtSeed.json');
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
@@ -11,12 +11,12 @@ db.once('open', async () => {
 
     await cleanDB('User', 'users');
 
-    await cleanDB('Thought', 'thoughts');
+    // await cleanDB('Thought', 'thoughts');
 
 
     await User.create(UserSeed);
     await Quiz.create(QuizSeed);
-    await Thought.create(ThoughtSeed);
+    // await Comment.create(ThoughtSeed);
 
   } catch (err) {
     console.error(err);

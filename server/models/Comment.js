@@ -1,21 +1,21 @@
 const { Schema, model } = require('mongoose');
 
 
-const thoughtSchema = new Schema({
-  thoughtText: {
+const commentSchema = new Schema({
+  commentText: {
     type: String,
-    required: 'You need to leave a thought!',
+    required: 'You need to leave a comment!',
     minlength: 1,
     maxlength: 240,
     trim: true,
   },
-  thoughtAuthor: {
+  commentAuthor: {
     type: String, 
     required: true,
     trim: true,
   },
 });
 
-const Thought = model('Thought', thoughtSchema);
+const Comment = model('Comment', commentSchema);
 
-module.exports = Thought;
+module.exports = Comment;

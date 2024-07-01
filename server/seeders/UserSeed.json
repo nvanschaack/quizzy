@@ -1,62 +1,19 @@
 [
     {
-      "username": "Brian Kernighan",
-      "email": "bkernighan@techfriends.dev",
-      "password": "password01",
-        "highScore": "0"
-    },
-    {
-      "username": "Max Kanat-Alexander",
-      "email": "mkanatalexander@techfriends.dev",
-      "password": "password02",
-      "highScore": "4"
-    },
-    {
-      "username": "Why The Lucky Stiff",
-      "email": "wtls@techfriends.dev",
-      "password": "password03",
-      "highScore": "3"
-    },
-    {
-      "username": "Kent Beck",
-      "email": "kbeck@techfriends.dev",
-      "password": "password04",
-      "highScore": "2"
-    },
-    {
-      "username": "Edward V. Berard",
-      "email": "evberard@techfriends.dev",
-      "password": "password05",
-      "highScore": "2"
-    },
-    {
-      "username": "Alan Kay",
-      "email": "akay@techfriends.dev",
-      "password": "password06",
-      "highScore": "4"
-    },
-    {
-      "username": "C.A.R. Hoare",
-      "email": "choare@techfriends.dev",
-      "password": "password07",
-      "highScore": "4"
-    },
-    {
-      "username": "David Thomas",
-      "email": "dthomas@techfriends.dev",
-      "password": "password08",
-      "highScore": "4"
-    },
-    {
-      "username": "Donald Knuth",
-      "email": "dknuth@techfriends.dev",
-      "password": "password09",
-      "highScore": "1"
-    },
-    {
       "username": "Lernantino",
       "email": "lernantino@techfriends.dev",
-      "password": "password10",
-      "highScore": "1"
+      "password": "password",
+      "quizzes": [
+        {
+          "score": 15,
+          "quizCategory": "Tech",
+          "highScore": 50
+        },
+        {
+          "score": 45,
+          "quizCategory": "Biology",
+          "highScore": 50
+        }
+      ]
     }
   ]
