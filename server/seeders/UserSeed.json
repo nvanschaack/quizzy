@@ -6,13 +6,11 @@
       "quizzes": [
         {
           "score": 15,
-          "quizCategory": "Tech",
-          "highScore": 50
+          "quizCategory": "Tech"
         },
         {
           "score": 45,
-          "quizCategory": "Biology",
-          "highScore": 50
+          "quizCategory": "Biology"
         }
       ]
     }

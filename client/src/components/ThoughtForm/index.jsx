@@ -2,38 +2,38 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_THOUGHT } from '../../utils/mutation';
-import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
+// import { ADD_THOUGHT } from '../../utils/mutation';
+// import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
 const ThoughtForm = () => {
   const [thoughtText, setThoughtText] = useState('');
 
-  const [characterCount, setCharacterCount] = useState(0);
+  // const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation
-  (ADD_THOUGHT, {
-    refetchQueries: [
-      QUERY_THOUGHTS,
-      'getThoughts',
-      QUERY_ME,
-      'me'
-    ]
-  });
+  // const [addThought, { error }] = useMutation
+  // (ADD_THOUGHT, {
+  //   refetchQueries: [
+  //     QUERY_THOUGHTS,
+  //     'getThoughts',
+  //     QUERY_ME,
+  //     'me'
+  //   ]
+  // });
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const { data } = await addThought({
-        variables: {
-          thoughtText,
-          thoughtAuthor: Auth.getProfile().data.username,
-        },
-      });
+      // const { data } = await addThought({
+      //   variables: {
+      //     thoughtText,
+      //     thoughtAuthor: Auth.getProfile().data.username,
+      //   },
+      // });
 
-      setThoughtText('');
+      // setThoughtText('');
     } catch (err) {
       console.error(err);
     }
@@ -42,15 +42,15 @@ const ThoughtForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'thoughtText' && value.length <= 280) {
-      setThoughtText(value);
-      setCharacterCount(value.length);
-    }
+    // if (name === 'thoughtText' && value.length <= 280) {
+    //   setThoughtText(value);
+    //   setCharacterCount(value.length);
+    // }
   };
 
   return (
     <div>
-      <h3>Share your feedback about the quiz!</h3>
+      {/* <h3>Share your feedback about the quiz!</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -93,7 +93,7 @@ const ThoughtForm = () => {
           You need to be logged in to share your feedback. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
-      )}
+      )} */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { QUERY_THOUGHTS } from '../../utils/queries';
-import Auth from '../../utils/auth';
+// import { Link } from 'react-router-dom';
+// import { QUERY_THOUGHTS } from '../../utils/queries';
+// import Auth from '../../utils/auth';
 
 const ThoughtList = ({
   thoughts,
@@ -14,7 +14,7 @@ const ThoughtList = ({
 
   return (
     <div>
-      {showTitle && <h3>{title}</h3>}
+      {/* {showTitle && <h3>{title}</h3>}
       {thoughts &&
         thoughts.map((thought) => (
           <div key={thought._id} className="card mb-3">
@@ -25,7 +25,7 @@ const ThoughtList = ({
               <p>{thought.thoughtText}</p>
             </div>
           </div>
-        ))}
+        ))} */}
     </div>
   );
 };

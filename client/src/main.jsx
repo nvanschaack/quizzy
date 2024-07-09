@@ -7,7 +7,14 @@ import Signup from './components/SignUp';
 import Login from './components/Login';
 import QuizForm from './pages/QuizForm';
 import Error from './pages/Error'
-import ScorePage from './pages/ScorePage.jsx'
+import CategorySubmitResults from './pages/CategorySubmitResults.jsx';
+import QuizPage from './pages/QuizPage.jsx';
+// import ScorePage from './pages/ScorePage.jsx'
+
+import auth from './utils/auth.js';
+import LoginPage from './pages/LoginPage.jsx';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {
@@ -17,21 +24,28 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: auth.loggedIn() ? <Home /> : <LoginPage />, 
       },
       {
         path: '/login',
-        element: <Login />
-      }, {
-        path: '/signup',
-        element: <Signup />
-      }, {
+        element: <LoginPage />
+      }, 
+      {
         path: '/quizform',
         element: <QuizForm />
-      }, {
-        path: '/scorepage/:score',
-        element: <ScorePage />
+      }, 
+      {
+        path: '/search/:category',
+        element: <CategorySubmitResults />
+      },
+      {
+        path: '/:id',
+        element: <QuizPage />
       }
+      // {
+      //   path: '/scorepage/:score',
+      //   element: <ScorePage />
+      // }
     
     ],
   },

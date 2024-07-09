@@ -17,6 +17,7 @@ module.exports = {
     let token = req.body.token || req.query.token || req.headers.authorization;
 
     // We split the token string into an array and return actual token
+    //this trims off the word bearer
     if (req.headers.authorization) {
       token = token.split(' ').pop().trim();
     }
@@ -28,7 +29,9 @@ module.exports = {
     // if token can be verified, add the decoded user's data to the request so it can be accessed in the resolver
     try {
       //verify decodes 
+      // data is a property in payload and payload is a property in the token
       const { data } = jwt.verify(token, secret, { maxAge: expiration });
+      //data is set as req.user
       req.user = data;
     } catch {
       console.log('Invalid token');

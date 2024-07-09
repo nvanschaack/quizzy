@@ -7,11 +7,10 @@ const scoreSchema = new Schema({
     type: Number,
     default: 0
   },
-  highScore: {
-    type: Number,
-    default: 0,
-  },
   quizCategory: {
+    type: String
+  },
+  quizTitle: {
     type: String
   }
 })
@@ -34,7 +33,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  quizzes: [scoreSchema],
+  quizScore: [scoreSchema],
 });
 
 //hashing password using bcrypt. the encryption will be 2^10 

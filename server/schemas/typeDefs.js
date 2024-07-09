@@ -3,14 +3,19 @@ const typeDefs = `
     _id: ID
     username: String
     email: String
-    # why is this referencing a [Quiz]?
-    quizzes: [Quiz]
+    quizScore: [QuizScore]
+  }
+
+  type QuizScore {
+  score: Int
+  quizCategory: String
   }
 
   type Quiz {
   _id: ID!
   questions: [Question]
   category: String
+  title: String!
   }
 
   type Question {
@@ -31,10 +36,12 @@ const typeDefs = `
   }
 
   type Query {
+    singleQuiz(_id: ID!): Quiz
+    quizByCategory(category: String!): [Quiz]
+    allQuizzes: [Quiz]
+    me: User
     # users: [User]
     # user(_id: ID!): User
-    quizzes: Quiz
-    me: User
     # thoughts(username: String): [Thought]
     # thought(thoughtId: ID!): Thought
   }

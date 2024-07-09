@@ -52,50 +52,288 @@
                 "correctAnswer": "1. Homo sapiens"
             }
         ],
-        "category": "Biology"
+        "category": "Biology",
+        "title": "Biology 1"
+    },
+    {
+        "questions": [
+            {
+                "question": "What organ in the human body is responsible for filtering waste products from the blood?",
+                "options": [
+                    "1. Heart",
+                    "2. Lungs",
+                    "3. Kidneys",
+                    "4. Stomach"
+                ],
+                "correctAnswer": "3. Kidneys"
+            },
+            {
+                "question": "What is the process by which DNA replicates itself before cell division?",
+                "options": [
+                    "1. Cellular respiration",
+                    "2. Photosynthesis",
+                    "3. Mitosis",
+                    "4. Meiosis"
+                ],
+                "correctAnswer": "3. Mitosis"
+            },
+            {
+                "question": "What is the term used to describe an organism that gets its nutrients from decomposing dead organisms?",
+                "options": [
+                    "1. Producer",
+                    "2. Decomposer",
+                    "3. Consumer",
+                    "4. Autotroph"
+                ],
+                "correctAnswer": "2. Decomposer"
+            },
+            {
+                "question": "What is the main component of cell membranes?",
+                "options": [
+                    "1. Carbohydrates",
+                    "2. Proteins",
+                    "3. Lipids (fats)",
+                    "4. Nucleic acids"
+                ],
+                "correctAnswer": "3. Lipids (fats)"
+            },
+            {
+                "question": "What is the process by which offspring inherit genetic traits from their parents?",
+                "options": [
+                    "1. Mutation",
+                    "2. Adaptation",
+                    "3. Heredity",
+                    "4. Evolution"
+                ],
+                "correctAnswer": "3. Heredity"
+            }
+        ],
+        "category": "Biology",
+        "title": "Biology 2"
+    },
+    {
+        "questions": [
+            {
+                "question": "The enzyme Telomerase plays a crucial role in maintaining the integrity of which cellular structure?",
+                "options": [
+                    "1. Ribosomes",
+                    "2. Endoplasmic reticulum",
+                    "3. Golgi apparatus",
+                    "4. Telomeres (ends of chromosomes)"
+                ],
+                "correctAnswer": "4. Telomeres (ends of chromosomes)"
+            },
+            {
+                "question": "Which type of RNA molecule carries the genetic code from DNA in the nucleus to the ribosomes in the cytoplasm for protein synthesis?",
+                "options": [
+                    "1. Messenger RNA (mRNA)",
+                    "2. Ribosomal RNA (rRNA)",
+                    "3. Transfer RNA (tRNA)",
+                    "4. Small nuclear RNA (snRNA)"
+                ],
+                "correctAnswer": "1. Messenger RNA (mRNA)"
+            },
+            {
+                "question": "The Hardy-Weinberg equilibrium describes a population that is:",
+                "options": [
+                    "1. Undergoing rapid evolution",
+                    "2. Experiencing a bottleneck effect",
+                    "3. Genetically diverse and not evolving",
+                    "4. Dominated by a single allele"
+                ],
+                "correctAnswer": "3. Genetically diverse and not evolving"
+            },
+            {
+                "question": "What is the primary function of the glycolytic pathway in cellular respiration?",
+                "options": [
+                    "1. Producing ATP directly",
+                    "2. Generating a proton gradient for ATP production",
+                    "3. Breaking down glucose into pyruvate",
+                    "4. Utilizing the electron transport chain"
+                ],
+                "correctAnswer": "3. Breaking down glucose into pyruvate"
+            },
+            {
+                "question": "Which type of immune response involves the production of antibodies specific to a particular antigen?",
+                "options": [
+                    "1. Innate immunity",
+                    "2. Adaptive immunity (humoral)",
+                    "3. Adaptive immunity (cell-mediated)",
+                    "4. Inflammatory response"
+                ],
+                "correctAnswer": "2. Adaptive immunity (humoral)"
+            }
+        ],
+        "category": "Biology",
+        "title": "Biology 3"
     },
     {
         "questions": [
             {
                 "question": "What does HTML stand for?",
                 "options": [
-                    "1. hyperlink text markup language",
-                    "2. hydrolink text markup language",
-                    "3. hyper text markup language",
-                    "4. hippo tiger mancoon lion"
+                    "1. Hypertext Markup Language",
+                    "2. Hyperlink Markup Language",
+                    "3. High Text Markup Language",
+                    "4. Hypertext Modeling Language"
                 ],
-                "correctAnswer": "3. hyper text markup language"
+                "correctAnswer": "1. Hypertext Markup Language"
             },
+            {
+                "question": "What element defines the root element of an HTML document?",
+                "options": [
+                    "1. <body>",
+                    "2. <head>",
+                    "3. <html>",
+                    "4. <document>"
+                ],
+                "correctAnswer": "3. <html>"
+            },
+            {
+                "question": "Which element is used to create headings in an HTML document?",
+                "options": [
+                    "1. <title>",
+                    "2. <h1> to <h6>",
+                    "3. <header>",
+                    "4. <heading>"
+                ],
+                "correctAnswer": "2. <h1> to <h6>"
+            },
+            {
+                "question": "How do you create a hyperlink to another webpage in HTML?",
+                "options": [
+                    "1. <link href='url'>",
+                    "2. <a href='url'>Text</a>",
+                    "3. <url>Text</url>",
+                    "4. <hyperlink href='url'>Text</hyperlink>"
+                ],
+                "correctAnswer": "2. <a href='url'>Text</a>"
+            },
+            {
+                "question": "What attribute is used to specify an image source in the `<img>` element?",
+                "options": [
+                    "1. <source>",
+                    "2. <url>",
+                    "3. src",
+                    "4. path"
+                ],
+                "correctAnswer": "3. src"
+            }
+        ],
+        "category": "Tech",
+        "title": "HTML"
+    },
+    {
+        "questions": [
             {
                 "question": "What does CSS stand for?",
                 "options": [
-                    "1. cascading script sheets",
-                    "2. castle story shoes",
-                    "3. cascading stylesheets",
-                    "4. constuctor syntax styles"
+                    "1. Cascading Style Sheets",
+                    "2. Cascading Style Scripts",
+                    "3. Creative Style System",
+                    "4. Coded Style Specification"
                 ],
-                "correctAnswer": "3. cascading stylesheets"
+                "correctAnswer": "1. Cascading Style Sheets"
             },
             {
-                "question": "True or False: React is a framework.",
+                "question": "How do you select an element by its class name in CSS?",
                 "options": [
-                    "True",
-                    "False"
+                    "1. <class>selector</class>",
+                    "2. .selector",
+                    "3. #selector",
+                    "4. [selector]"
                 ],
-                "correctAnswer": "False"
+                "correctAnswer": "2. .selector"
             },
             {
-                "question": "As column and row are in SQL, ___ and ___ are in MongoBD.",
+                "question": "What property in CSS is used to change the background color of an element?",
                 "options": [
-                    "1. collection, document",
-                    "2. column, row",
-                    "3. document, collection",
-                    "4. table, field"
+                    "1. background",
+                    "2. bgcolor",
+                    "3. color",
+                    "4. background-color"
                 ],
-                "correctAnswer": "1. collection, document"
+                "correctAnswer": "4. background-color"
+            },
+            {
+                "question": "What is the name of the principle in CSS that determines which style rule applies when multiple rules target the same element?",
+                "options": [
+                    "1. Inheritance",
+                    "2. Specificity",
+                    "3. Cascading",
+                    "4. Overriding"
+                ],
+                "correctAnswer": "2. Specificity"
+            },
+            {
+                "question": "What media query is used to target styles for mobile devices?",
+                "options": [
+                    "1. @media (max-width: 768px)",
+                    "2. @media (mobile)",
+                    "3. @media (screen and handheld)",
+                    "4. @media (device: mobile)"
+                ],
+                "correctAnswer": "1. @media (max-width: 768px)"
             }
         ],
-        "category": "Tech"
+        "category": "Tech",
+        "title": "CSS"
+    },
+    {
+        "questions": [
+            {
+                "question": "What does the keyword `var`, `let`, or `const` do in JavaScript?",
+                "options": [
+                    "1. Defines a function",
+                    "2. Declares a variable",
+                    "3. Creates an object",
+                    "4. Starts a loop"
+                ],
+                "correctAnswer": "2. Declares a variable"
+            },
+            {
+                "question": "How do you write a single-line comment in JavaScript?",
+                "options": [
+                    "1. /* comment */",
+                    "2. // comment",
+                    "3. //* comment *//",
+                    "4. <comment>comment</comment>"
+                ],
+                "correctAnswer": "2. // comment"
+            },
+            {
+                "question": "What is the correct syntax to define a function in JavaScript?",
+                "options": [
+                    "1. function name(parameters) { code }",
+                    "2. define function(name, parameters) { code }",
+                    "3. createFunction name(parameters) { code }",
+                    "4. func name(parameters) = { code }"
+                ],
+                "correctAnswer": "1. function name(parameters) { code }"
+            },
+            {
+                "question": "What is the difference between primitive data types and reference types in JavaScript?",
+                "options": [
+                    "1. Primitive types store data directly, reference types store references to data",
+                    "2. Primitive types are slower, reference types are faster",
+                    "3. Primitive types can be changed, reference types cannot",
+                    "4. Primitive types are objects, reference types are not"
+                ],
+                "correctAnswer": "1. Primitive types store data directly, reference types store references to data"
+            },
+            {
+                "question": "What is the purpose of the `this` keyword in JavaScript?",
+                "options": [
+                    "1. Refers to the global object",
+                    "2. Refers to the function being executed",
+                    "3. Refers to the argument passed to the function",
+                    "4. Refers to the object that the function is a method of"
+                ],
+                "correctAnswer": "4. Refers to the object that the function is a method of"
+            }
+        ],
+        "category": "Tech",
+        "title": "CSS"
     },
     {
         "questions": [
@@ -150,6 +388,7 @@
                 "correctAnswer": "1. Increasing atomic mass"
             }
         ],
-        "category": "Chemistry"
+        "category": "Chemistry",
+        "title": "Chemistry 1"
     }
 ]
