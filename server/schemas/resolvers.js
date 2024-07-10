@@ -12,7 +12,7 @@ const resolvers = {
     singleQuiz: async (_, args, context) => {
       if (context.user) {
         //args is the parameters passed in the singleQuiz query in the typeDefs
-        return Quiz.findOne({ _id: args._id })
+        return Quiz.findOne({ _id: args.quizId })
       }
     },
     quizByCategory: async (_, args, context) => {

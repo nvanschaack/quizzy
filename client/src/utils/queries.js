@@ -32,15 +32,15 @@ query me {
 `;
 
 export const SINGLE_QUIZ =gql`
-query singleQuiz($id: ID!) {
-  singleQuiz(_id: $id) {
+query singleQuiz($quizId: ID!) {
+  singleQuiz(quizId: $quizId) {
     _id
+    category
     questions {
       question
       options
       correctAnswer
     }
-    category
     title
   }
 }

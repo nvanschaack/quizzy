@@ -36,7 +36,7 @@ const typeDefs = `
   }
 
   type Query {
-    singleQuiz(_id: ID!): Quiz
+    singleQuiz(quizId: ID!): Quiz
     quizByCategory(category: String!): [Quiz]
     allQuizzes: [Quiz]
     me: User
