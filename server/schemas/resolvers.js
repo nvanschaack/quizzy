@@ -61,6 +61,17 @@ const resolvers = {
 
       return { token, user };
     },
+    saveScore: async (_, args, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          {_id: context.user._id},
+          {$push:{quizScore: args}},
+          {new: true, runValidators: true}
+        )
+        return updatedUser;
+      }
+      throw AuthenticationError;
+    }
     // addThought: async (parent, { thoughtAuthor, thoughtText }, context) => {
     //   if (context.user) {
     //     const thought = await Thought.create({

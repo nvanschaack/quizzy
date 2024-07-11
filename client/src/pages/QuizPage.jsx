@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { SINGLE_QUIZ } from '../utils/queries';
+import { SAVE_SCORE } from '../utils/mutation';
+import auth from '../utils/auth';
 
 export default function QuizPage() {
+
+    const [modalShow, setModalShow] = useState(false);
+    const [scoreSubmitted, setScoreSubmitted] = useState(false);
+    const [percentScore, setPercentScore] = useState(0);
 
     let { id } = useParams();
 
@@ -13,14 +20,16 @@ export default function QuizPage() {
         variables: { quizId: id }
     });
 
+    const [saveScore] = useMutation(SAVE_SCORE)
+
     //Added userChoices state to keep track of user selections.
     const [userChoices, setUserChoices] = useState({});
 
     //taking in index of question and option parameters to be used when setting new userchoices object.
-    //questionIndex represents the index of the question asked
+    //questionIndex represents the index of the question asked (ex. 0,1,2,3,4)
     //option represents the answer the user chose
     const handleOptionChange = (questionIndex, option) => {
-        //setUserChoices is making an updated userChoices object by spreading the original userChoices (all the options available per each question) and making a NEW object with key of the question index asked and value of the option the user selected
+        //setUserChoices is making an updated userChoices object by spreading the original userChoices (all the options available per each question) and making a NEW object with a key of index of question asked and value of the option the user selected
         setUserChoices({
             ...userChoices,
             [questionIndex]: option
@@ -31,8 +40,7 @@ export default function QuizPage() {
     const handleSubmit = () => {
         console.log(userChoices);
 
-
-        // create a varible that will represent the array from the query
+        // create a varible that will represent the array of questions from the query
         const questionArray = data.singleQuiz.questions
         let userScore = 0
         // we need to loop the questions array that comes from apollo
@@ -41,13 +49,16 @@ export default function QuizPage() {
             // if the values match give the user one point
             if (question.correctAnswer === userChoices[i]) {
                 userScore++
-            }         
+            }
         })
 
         // create a percentage of correct using the score and the length of the question array and multiply by 100
-        const percentScore = (userScore / questionArray.length) * 100;
+        const quizPercentScore = (userScore / questionArray.length) * 100;
+        setPercentScore(quizPercentScore)
 
-        console.log(percentScore);
+        // once user hits submit, modal will pop up with the users username, score, and retry button
+        setModalShow(true)
+        setScoreSubmitted(true)
     };
 
     if (loading) return <h1>Loading...</h1>;
@@ -79,10 +90,52 @@ export default function QuizPage() {
                         </li>
                     ))}
                 </ol>
-                <Button variant="primary" onClick={handleSubmit}>
+
+                {scoreSubmitted ? (<Button variant="primary" onClick={() => document.location.reload()}>
+                    Retake Quiz
+                </Button>) : (
+                    <Button variant="primary" onClick={handleSubmit}>
                     Submit
-                </Button>
+                </Button>)}
+                
             </Form>
+            <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                score={percentScore}
+                title={data.singleQuiz.title}
+                username={auth.getProfile().data.username}
+            />
         </>
+    );
+}
+
+function MyVerticallyCenteredModal(props) {
+
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            backdrop="static"
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Quiz Submitted!
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <h4>Nice work, {props.username}</h4>
+                <p>
+                    You got {props.score}% on {props.title} quiz.
+                </p>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button onClick={props.onHide}>Close</Button>
+                
+                <Button onClick={() => document.location.reload()}>Retake</Button>
+            </Modal.Footer>
+        </Modal>
     );
 }

@@ -9,6 +9,7 @@ const typeDefs = `
   type QuizScore {
   score: Int
   quizCategory: String
+  quizTitle: String
   }
 
   type Quiz {
@@ -50,6 +51,8 @@ const typeDefs = `
     addUser(username: String!, email: String!, password: String!): Auth
 
     login(email: String!, password: String!): Auth
+
+    saveScore(score: Int, quizCategory: String, quizTitle: String): User
 
     # addThought(thoughtText: String!): Thought
     #removeThought(thoughtId: ID!): Thought
