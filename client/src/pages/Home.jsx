@@ -21,7 +21,6 @@ const Home = () => {
     document.location.assign(`/search/${selectedCategory}`)
   }
 
-  console.log(selectedCategory);
 
   return (
     <>
@@ -43,14 +42,14 @@ const Home = () => {
             <div>
               <Dropdown>
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                  Categories
+                 {selectedCategory === '' ? 'Category' : selectedCategory}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1" onClick={() => setSelectedCategory('Biology')}>Biology</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2" onClick={() => setSelectedCategory('Tech')}>Tech</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3" onClick={() => setSelectedCategory('Chemistry')}>Chemistry</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3" onClick={() => setSelectedCategory('All')}>View All</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setSelectedCategory('Biology')}>Biology</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setSelectedCategory('Tech')}>Tech</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setSelectedCategory('Chemistry')}>Chemistry</Dropdown.Item>
+                  <Dropdown.Item onClick={() => setSelectedCategory('All')}>View All</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               <Button onClick={submitCategory}>Submit</Button>
