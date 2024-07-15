@@ -1,6 +1,4 @@
 import { Link, redirect, useLocation } from 'react-router-dom';
-import QuizForm from '../../pages/QuizForm';
-import HomePage from '../../pages/Home';
 import Auth from '../../utils/auth';
 import Button from 'react-bootstrap/Button';
 
@@ -15,6 +13,7 @@ const Header = () => {
         </Link>
 
         {Auth.loggedIn() ? <Button variant="light" style={{ marginLeft: '5px' }} onClick={() => Auth.logout()}>Logout</Button> : ''}
+        {Auth.loggedIn() ? <Button variant="light" style={{ marginLeft: '5px' }} onClick={() => document.location.redirect('/UserScores')}>See Scores</Button> : ''}
 
       </nav>
     </header>

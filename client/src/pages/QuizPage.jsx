@@ -43,7 +43,7 @@ export default function QuizPage() {
         event.preventDefault();
         console.log(userChoices);
 
-        // create a varible that will represent the array of questions from the query
+        // create a variable that will represent the array of questions from the query
         const questionArray = data.singleQuiz.questions
         let userScore = 0
 
@@ -80,6 +80,7 @@ export default function QuizPage() {
         // once user hits submit, modal will pop up with the users username, score, and retry button
         setModalShow(true)
         setScoreSubmitted(true)
+        //setResults is stateful, when we set it to newResults, it sets "results" to a new object with a userAnswer and isCorrect property
         setResults(newResults)
     };
 
@@ -91,7 +92,7 @@ export default function QuizPage() {
     return (
         <>
             <h1>{data.singleQuiz.title} Quiz Page</h1>
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <ol>
 
                     {data.singleQuiz.questions.map((question, i) => (
@@ -127,7 +128,7 @@ export default function QuizPage() {
                 {scoreSubmitted ? (<Button variant="primary" onClick={() => document.location.reload()}>
                     Retake Quiz
                 </Button>) : (
-                    <Button variant="primary" onClick={handleSubmit}>
+                    <Button variant="primary" type='submit'>
                         Submit
                     </Button>)}
 

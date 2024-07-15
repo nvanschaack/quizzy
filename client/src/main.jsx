@@ -9,7 +9,7 @@ import QuizForm from './pages/QuizForm';
 import Error from './pages/Error'
 import CategorySubmitResults from './pages/CategorySubmitResults.jsx';
 import QuizPage from './pages/QuizPage.jsx';
-// import ScorePage from './pages/ScorePage.jsx'
+import UserScores from './pages/UserScores.jsx';
 
 import auth from './utils/auth.js';
 import LoginPage from './pages/LoginPage.jsx';
@@ -41,12 +41,12 @@ const router = createBrowserRouter([
       {
         path: '/:id',
         element: <QuizPage />
+      },
+      // create a page that displays all of user's scores
+      {
+        path: '/UserScores',
+        element: <UserScores />
       }
-      // {
-      //   path: '/scorepage/:score',
-      //   element: <ScorePage />
-      // }
-    
     ],
   },
 ]);

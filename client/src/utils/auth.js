@@ -1,5 +1,6 @@
 import decode from 'jwt-decode';
 
+//CUSTOM HOOKS
 class AuthService {
     getProfile() {
         return decode(this.getToken());
