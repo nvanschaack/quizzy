@@ -24,6 +24,7 @@ query me {
       score
       quizCategory
       quizTitle
+      createdAt
     }
     email
     username

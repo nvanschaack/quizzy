@@ -1,6 +1,7 @@
 // import { Schema, model } from 'mongoose'
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+const { dateFormat } = require('../utils/dateFormat')
 
 const scoreSchema = new Schema({
   score: {
@@ -12,6 +13,11 @@ const scoreSchema = new Schema({
   },
   quizTitle: {
     type: String
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+    get: (timeStamp) => dateFormat(timeStamp)
   }
 })
 

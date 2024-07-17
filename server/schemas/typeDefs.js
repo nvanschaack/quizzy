@@ -10,6 +10,7 @@ const typeDefs = `
   score: Int
   quizCategory: String
   quizTitle: String
+  createdAt: String
   }
 
   type Quiz {

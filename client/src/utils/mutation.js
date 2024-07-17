@@ -36,6 +36,7 @@ mutation saveScore($score: Int, $quizCategory: String, $quizTitle: String) {
       quizCategory
       score
       quizTitle
+      createdAt
     }
   }
 }

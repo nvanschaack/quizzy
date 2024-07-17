@@ -31,7 +31,7 @@ const Home = () => {
               Welcome, {getUser().username}
             </h1>
             <h3>
-              Here at quizzy, you are able to test your knowledge on a category of your choice! Simply select a quiz category from the drop down menu and click search to view all quizzes that fall in that field. Enjoy!
+              Here at Quizzy, you are able to test your knowledge on a category of your choice! Simply select a quiz category from the drop down menu and click search to view all quizzes that fall in that field. Enjoy!
             </h3>
           </Col>
           {/* here, there should be a div with a dropdown menu, the dropdown menu should have options of the type of quiz the user wants to take, including an ALL option. There should be a search button which then brings you to a new page */}
