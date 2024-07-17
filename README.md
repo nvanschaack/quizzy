@@ -1,4 +1,4 @@
-# Tech Quiz
+# Quizzy
 
 Welcome to the Quizzy application! This project is designed to help users enhance their knowledge by taking quizzes on various topics. Users can log in, take quizzes, and see their scores.
 
