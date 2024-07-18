@@ -13,9 +13,8 @@ export default function UserScores() {
     if (error) return `Error! ${error.message}`;
     return (
         <div>
-            
-                <h2>{data.me?.username}, here are your past quiz scores</h2>
-                <div style={{display: 'flex', flexWrap: 'wrap'}}>
+            <h2>{data.me?.username}, here are your past quiz scores</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {data.me?.quizScore.map((score, i) => (
                     <Card key={i} style={{ width: '18rem', margin: '5px' }}>
                         <Card.Body>
@@ -26,7 +25,6 @@ export default function UserScores() {
                     </Card>
                 ))}
             </div>
-
         </div>
     )
 }

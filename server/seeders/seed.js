@@ -1,5 +1,5 @@
 const db = require('../config/connection');
-const { User, Quiz, Comment } = require('../models');
+const { User, Quiz } = require('../models');
 const UserSeed = require('./UserSeed.json');
 const QuizSeed = require('./QuizSeed.json');
 // const ThoughtSeed = require('./ThoughtSeed.json');
@@ -9,14 +9,11 @@ db.once('open', async () => {
   try {
     await cleanDB('Quiz', 'quizzes');
 
-    await cleanDB('User', 'users');
+    //uncomment this when need to re-seed locally
+    // await cleanDB('User', 'users');
+    // await User.create(UserSeed);
 
-    // await cleanDB('Thought', 'thoughts');
-
-
-    await User.create(UserSeed);
     await Quiz.create(QuizSeed);
-    // await Comment.create(ThoughtSeed);
 
   } catch (err) {
     console.error(err);
