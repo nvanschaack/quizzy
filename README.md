@@ -4,7 +4,19 @@ Welcome to the Quizzy application! This project is designed to help users enhanc
 
 ## Live Demo
 
-Check out the live application [here]().
+Check out the live application [here](https://quizzy-l7t0.onrender.com/).
+
+Once the user is logged in or has signed up, they will be taken to the home page:
+![Preview of home page](./client/src/assets/homepage.png)
+
+The user can then select a category of a quiz they'd like to take from the dropdown button that reads "Category". Once the user selects a category and clicks submit, they will be brought to a page with all the quizzes under that specific category.
+![Selection of quizzes](./client/src/assets/categories.png)
+
+Once the user clicks on which quiz they want to take, they will be brought to the actual quiz and can submit to see the score they got, with an option to retake the quiz.
+![Quiz example](./client/src/assets/quizexample.png)
+
+Lastly, the user can click on the "Scores" tab at the top to see all of their past scores on quizzes they've taken.
+![See scores](./client/src/assets/seescores.png)
 
 ## Table of Contents
 
