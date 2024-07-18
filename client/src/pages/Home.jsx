@@ -36,12 +36,13 @@ const Home = () => {
           </Col>
           {/* here, there should be a div with a dropdown menu, the dropdown menu should have options of the type of quiz the user wants to take, including an ALL option. There should be a search button which then brings you to a new page */}
           <Col>
-            <div>
+            <div style={{textAlign: 'center', border: 'solid black 1px', padding: '2%'}}>
+            <p>
               Select Your Desired Quiz Category!
-            </div>
-            <div>
+            </p>
               <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <Dropdown.Toggle variant="success"
+                style={{backgroundColor:'#1f5f51', margin: '2%'}} id="dropdown-basic">
                  {selectedCategory === '' ? 'Category' : selectedCategory}
                 </Dropdown.Toggle>
 

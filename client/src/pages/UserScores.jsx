@@ -7,23 +7,25 @@ import { QUERY_ME } from '../utils/queries'
 export default function UserScores() {
 
     const { data, loading, error } = useQuery(QUERY_ME)
+    console.log(data);
 
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     return (
         <div>
-            <>
-                <h2>{data.me.username}, here are your past quiz scores</h2>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </>
+            
+                <h2>{data.me?.username}, here are your past quiz scores</h2>
+                <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                {data.me?.quizScore.map((score, i) => (
+                    <Card key={i} style={{ width: '18rem', margin: '5px' }}>
+                        <Card.Body>
+                            <Card.Title>Quiz: {score.quizTitle}</Card.Title>
+                            <Card.Text>Score: {score.score}%</Card.Text>
+                            <Card.Text>Taken: {score.createdAt}</Card.Text>
+                        </Card.Body>
+                    </Card>
+                ))}
+            </div>
 
         </div>
     )
