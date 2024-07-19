@@ -90,7 +90,7 @@ export default function QuizPage() {
     if (error) return <h1>Error loading quiz</h1>;
 
     return (
-        <div className='mb-6'>
+        <div>
             <h1>{data.singleQuiz.title} Quiz Page</h1>
             <Form onSubmit={handleSubmit}>
                 <ol>
