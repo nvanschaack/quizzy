@@ -1,4 +1,4 @@
-const { User, Quiz, Thought } = require('../models');
+const { User, Quiz } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
